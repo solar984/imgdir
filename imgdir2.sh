@@ -32,7 +32,7 @@ getcomment()
   if [ -f "${commentfile}" ]; then
     fn=$( echo -ne "${1}\t" )
     comment=$( grep "${fn}" "${commentfile}" | cut -f 2- )
-    echo "fn = ${fn}  comnent = ${comment}"
+    echo "fn = ${fn}  comment = ${comment}"
   fi
 }
 
